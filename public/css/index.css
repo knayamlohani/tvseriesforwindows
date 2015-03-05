@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: white; }
+
+body {
+  width: 100%;
+  height: 100%;
+  font-weight: 200;
+  background-color: rgba(0, 0, 0, 0.3); }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-weight: 100; }
+  body a {
+    text-decoration: none;
+    color: white; }
+    body a :hover {
+      color: white;
+      text-decoration: none; }
+  body div, body li {
+    -moz-box-sizing: content-box;
+         box-sizing: content-box; }
+
+nav#app-nav-bar {
+  height: 5em;
+  width: 100%;
+  background: rgba(255, 255, 255, 0); }
+  nav#app-nav-bar > div {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    height: 100%; }
+    nav#app-nav-bar > div > div {
+      display: inline-block; }
+    nav#app-nav-bar > div #back-to-app-home {
+      width: 7%;
+      text-align: center; }
+      nav#app-nav-bar > div #back-to-app-home a {
+        color: white; }
+    nav#app-nav-bar > div #app-info {
+      width: 83%; }
+      nav#app-nav-bar > div #app-info > div {
+        display: inline-block; }
+      nav#app-nav-bar > div #app-info #app-name {
+        padding-right: .5em;
+        vertical-align: center; }
+        nav#app-nav-bar > div #app-info #app-name h1 {
+          font-weight: 100; }
+      nav#app-nav-bar > div #app-info #viewing-series {
+        padding: 0em 1em; }
+      nav#app-nav-bar > div #app-info #series-name h1 {
+        font-weight: 100; }
+      nav#app-nav-bar > div #app-info #app-for-windows {
+        padding: 0em 1em; }
+    nav#app-nav-bar > div #signin-to-app {
+      vertical-align: center; }
+      nav#app-nav-bar > div #signin-to-app button {
+        padding: 0;
+        margin: 0; }
+
+.dashboard-content {
+  color: black; }
+
+#dashboard {
+  height: 100%;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap; }
+  #dashboard #options-bar {
+    width: 100%;
+    height: 4em; }
+    #dashboard #options-bar ul {
+      font-weight: 100;
+      width: 100%;
+      style: none;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      flow: row nowrap;
+      align-tems: center;
+      -webkit-align-content: center;
+          -ms-flex-line-pack: center;
+              align-content: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      #dashboard #options-bar ul li {
+        list-style: none;
+        padding: 0 1em;
+        border-bottom: .06em solid transparent; }
+        #dashboard #options-bar ul li :hover {
+          border-bottom: 0.06em solid rgba(0, 0, 0, 0.3); }
+      #dashboard #options-bar ul a:hover, #dashboard #options-bar ul focus {
+        color: white;
+        text-decoration: none; }
+  #dashboard #options-bar-content {
+    color: white;
+    width: auto; }
+    #dashboard #options-bar-content .options-bar-option-content.not-active {
+      display: none; }
+    #dashboard #options-bar-content > div {
+      width: 100%; }
+    #dashboard #options-bar-content div[data-link="account"] {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: column nowrap;
+          -ms-flex-flow: column nowrap;
+              flex-flow: column nowrap; }
+      #dashboard #options-bar-content div[data-link="account"] > div {
+        width: 100%;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap; }
+        #dashboard #options-bar-content div[data-link="account"] > div .title {
+          width: 25%; }
+        #dashboard #options-bar-content div[data-link="account"] > div .data {
+          width: 75%;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-flow: column nowrap;
+              -ms-flex-flow: column nowrap;
+                  flex-flow: column nowrap; }
+      #dashboard #options-bar-content div[data-link="account"] > div {
+        padding-top: 3em; }
+      #dashboard #options-bar-content div[data-link="account"] #profile {
+        min-height: 10em;
+        border-top: 0.13em solid rgba(0, 0, 0, 0.15); }
+        #dashboard #options-bar-content div[data-link="account"] #profile .data .data-i {
+          margin: .5em 0; }
+      #dashboard #options-bar-content div[data-link="account"] #password {
+        min-height: 10em;
+        border-top: 0.13em solid rgba(0, 0, 0, 0.15); }
+      #dashboard #options-bar-content div[data-link="account"] #close-account {
+        min-height: 5em;
+        border-top: 0.13em solid rgba(0, 0, 0, 0.15); }
+      #dashboard #options-bar-content div[data-link="account"] .title > h3, #dashboard #options-bar-content div[data-link="account"] .title p {
+        margin: 0 0 0 2em; }
+
+#subscriptions-option-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  align-tems: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  #subscriptions-option-content .subscribed-tv-show {
+    padding: 2em 0 0 2em;
+    height: 20em;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap; }
+    #subscriptions-option-content .subscribed-tv-show .series-artwork {
+      height: 90%; }
+      #subscriptions-option-content .subscribed-tv-show .series-artwork img {
+        height: 100%;
+        min-height: 100%;
+        max-height: 100%; }
+    #subscriptions-option-content .subscribed-tv-show .series-name {
+      height: 9%;
+      font-weight: 100; }
+
+h4::before {
+  padding-right: 0;
+  margin-left: 0;
+  content: "";
+  color: #9ddcff; }
+
+/*# sourceMappingURL=index.css.map */
